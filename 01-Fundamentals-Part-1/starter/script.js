@@ -71,3 +71,13 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now- 2018);
 
 //----------------------------------------------------------
+
+// OPERATOR PRECEDENCE
+
+let z,y;
+z = y = 25 - 10 - 5; // 10
+//In questo caso l'assegnazione avviene da destra a sinistra
+console.log(z, y);
+
+const avgAge = ageJonas + ageSarah / 2;
+console.log(avgAge);
