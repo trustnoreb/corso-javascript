@@ -21,3 +21,12 @@ console.log(typeof javascriptIsFun);
 
 javascriptIsFun = 'Bob';
 console.log(typeof javascriptIsFun);
+
+//let, var e const
+let age = 30;
+age = 31; //mutiamo la variabile o la assegniamo di nuovo
+
+const birthYear = 1991;
+//birthYear= 1990; Questo darebbe errore
+
+//const job; darà errore
