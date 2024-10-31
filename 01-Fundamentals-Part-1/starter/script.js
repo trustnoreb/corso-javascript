@@ -151,6 +151,36 @@ console.log('23' - '10' - 3); //trasforma in numeri
 console.log('23' * '10' * 3); //trasforma in numeri
 console.log('23' / '10'); //trasforma in numeri
 
-let n = '1' + 1;
-n = n - 1;
+let n = '1' + 1; //11
+n = n - 1; //10
 console.log('n', n);
+
+//----------------------------------------------------------
+
+//Truthy and falsy values
+
+//falsy
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+//truthy
+console.log('empty object: ',Boolean({}));
+console.log(Boolean('Jonas'));
+
+//testing
+const money = 0; 
+if(money){
+    console.log("Don't spend it all");
+}else{
+    console.log("You should get a job!");
+}
+
+let height;
+if (height){
+    console.log('YAY, height is defined');
+}else{
+    console.log('height is UNDEFINED');
+}
