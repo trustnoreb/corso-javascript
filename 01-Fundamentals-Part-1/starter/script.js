@@ -109,15 +109,15 @@ lines`);
 //----------------------------------------------------------
 
 // If / else
-const age = 15;
+//const age = 15;
 //const isOldEnough = age >=18;
 
-if(age >=18){
-    console.log(`Congrats !`);
-}else{
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
-}
+// if(age >=18){
+//     console.log(`Congrats !`);
+// }else{
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+// }
 
 let birthYear = 2012;
 let century=0;
@@ -157,7 +157,7 @@ console.log('n', n);
 
 //----------------------------------------------------------
 
-//Truthy and falsy values
+//TRUTHY AND FALSY VALUES
 
 //falsy
 console.log(Boolean(0));
@@ -184,3 +184,28 @@ if (height){
 }else{
     console.log('height is UNDEFINED');
 }
+
+//----------------------------------------------------------
+
+//EQUALITY OPERATORS
+const age = 18;
+if(age===18) console.log("You just became an adult");
+if(age==18) console.log("You just became an adult");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if(favourite == 23){
+    console.log('Cool! 23 is an amazing number');
+}
+
+if(favourite === 23){
+    console.log('Cool! 23 is an amazing number');
+} else if (favourite === 7){
+    console.log('7 is also a cool number!');
+} else {
+    console.log('Number is not 23 or 7!');
+}
+
+if (favourite !== 23) console.log('Why not 23');
