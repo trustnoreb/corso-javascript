@@ -51,7 +51,7 @@ console.log(ageJonas, ageSarah);
 
 console.log(ageJonas * 2, ageJonas /10, 2**3);
 
-const firstName = 'Jonas';
+//const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + '' + lastName);
 
@@ -81,3 +81,27 @@ console.log(z, y);
 
 const avgAge = ageJonas + ageSarah / 2;
 console.log(avgAge);
+
+//----------------------------------------------------------
+
+//STRINGS AND TEMPLATE LITERALS
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthday = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthday) + ' years old ' + job + '!';
+console.log(jonas);
+
+const jonasnew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
+console.log(jonasnew);
+
+console.log(`Just a regular string...`);
+
+//Multiple lines strings
+// \n\
+console.log('Strings with \n\ multiple \n\ lines');
+// backtip
+console.log(`Strings with
+multiple
+lines`);
