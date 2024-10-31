@@ -27,10 +27,10 @@ console.log(typeof javascriptIsFun);
 //----------------------------------------------------------
 
 //LET, VAR E CONST
-let age = 30;
-age = 31; //mutiamo la variabile o la assegniamo di nuovo
+//let age = 30;
+//age = 31; //mutiamo la variabile o la assegniamo di nuovo
 
-const birthYear = 1991;
+//const birthYear = 1991;
 //birthYear= 1990; Questo darebbe errore
 
 //const job; darà errore
@@ -52,8 +52,8 @@ console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas /10, 2**3);
 
 //const firstName = 'Jonas';
-const lastName = 'Schmedtmann';
-console.log(firstName + '' + lastName);
+//const lastName = 'Schmedtmann';
+//console.log(firstName + '' + lastName);
 
 let x = 10 + 5;
 x += 10; // x = x + 10 = 25
@@ -90,11 +90,11 @@ const job = 'teacher';
 const birthday = 1991;
 const year = 2037;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthday) + ' years old ' + job + '!';
-console.log(jonas);
+//const jonas = "I'm " + firstName + ', a ' + (year - birthday) + ' years old ' + job + '!';
+//console.log(jonas);
 
-const jonasnew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
-console.log(jonasnew);
+//const jonasnew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
+//console.log(jonasnew);
 
 console.log(`Just a regular string...`);
 
@@ -105,3 +105,26 @@ console.log('Strings with \n\ multiple \n\ lines');
 console.log(`Strings with
 multiple
 lines`);
+
+//----------------------------------------------------------
+
+// If / else
+const age = 15;
+//const isOldEnough = age >=18;
+
+if(age >=18){
+    console.log(`Congrats !`);
+}else{
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+
+let birthYear = 2012;
+let century=0;
+if( birthYear <= 2000){
+     century = 20;
+}else{
+     century = 21;
+}
+
+console.log(century);
