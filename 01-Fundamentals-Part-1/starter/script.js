@@ -128,3 +128,29 @@ if( birthYear <= 2000){
 }
 
 console.log(century);
+
+//----------------------------------------------------------
+
+// TYPE CONVERSION AND COERCION
+
+//Type Conversion
+const inputYear = '1991';
+console.log(inputYear + 18);
+console.log(Number(inputYear));
+console.log(Number(inputYear) +18);
+
+console.log(Number("prova")); // Questo da errore: NaN -> is not a number
+
+console.log(typeof NaN); // number (not valid)
+
+console.log(String(23));
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old'); // trasforma in stringhe
+console.log('23' - '10' - 3); //trasforma in numeri
+console.log('23' * '10' * 3); //trasforma in numeri
+console.log('23' / '10'); //trasforma in numeri
+
+let n = '1' + 1;
+n = n - 1;
+console.log('n', n);
