@@ -188,24 +188,50 @@ if (height){
 //----------------------------------------------------------
 
 //EQUALITY OPERATORS
-const age = 18;
-if(age===18) console.log("You just became an adult");
-if(age==18) console.log("You just became an adult");
+// const age = 18;
+// if(age===18) console.log("You just became an adult");
+// if(age==18) console.log("You just became an adult");
 
-const favourite = Number(prompt("What's your favourite number?"));
-console.log(favourite);
-console.log(typeof favourite);
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if(favourite == 23){
-    console.log('Cool! 23 is an amazing number');
-}
+// if(favourite == 23){
+//     console.log('Cool! 23 is an amazing number');
+// }
 
-if(favourite === 23){
-    console.log('Cool! 23 is an amazing number');
-} else if (favourite === 7){
-    console.log('7 is also a cool number!');
+// if(favourite === 23){
+//     console.log('Cool! 23 is an amazing number');
+// } else if (favourite === 7){
+//     console.log('7 is also a cool number!');
+// } else {
+//     console.log('Number is not 23 or 7!');
+// }
+
+// if (favourite !== 23) console.log('Why not 23');
+
+//----------------------------------------------------------
+
+//BOOLEAN LOGIC
+const hasDriverLicence = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriverLicence && hasGoodVision);
+console.log(hasDriverLicence || hasGoodVision);
+console.log(!hasDriverLicence);
+
+// if(hasDriverLicence && hasGoodVision){
+//     console.log(`Sarah is able to drive`);
+// } else {
+//     console.log(`Someone else should drive..`);
+// }
+
+const isTired = false; // C
+console.log(hasDriverLicence || hasGoodVision || isTired);
+console.log(hasDriverLicence && hasGoodVision && isTired);
+
+if(hasDriverLicence && hasGoodVision && !isTired){
+    console.log(`Sarah is able to drive`);
 } else {
-    console.log('Number is not 23 or 7!');
+    console.log(`Someone else should drive..`);
 }
-
-if (favourite !== 23) console.log('Why not 23');
