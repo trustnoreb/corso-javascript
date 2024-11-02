@@ -277,3 +277,17 @@ if(day === 'monday'){
 } else {
     console.log('Not a valid day!');
 }
+
+//----------------------------------------------------------
+
+//STATEMENT AND EXPRESSIONS
+
+//Expressions
+const var1 = 2+ 3;
+var num = 1991;
+var bool = true && true && !false
+
+//Statement
+if(23>10){
+ const str = '23 is bigger';
+}
