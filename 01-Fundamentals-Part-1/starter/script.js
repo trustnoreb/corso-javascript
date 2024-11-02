@@ -291,3 +291,25 @@ var bool = true && true && !false
 if(23>10){
  const str = '23 is bigger';
 }
+
+//----------------------------------------------------------
+
+// CONDITIONAL (TERNANRY) OPERATOR
+const age = 23;
+// //if
+// age >= 18 ? console.log('I like drink wine') :
+// console.log('I like drink water') //else
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+
+if (age >= 18){
+    drink2  = 'wine';
+} else {
+    drink2  = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
