@@ -36,3 +36,34 @@ console.log(appleOrangeJuice);
 //----------------------------------------------------------
 
 // FUNCTIONS DECLARATIONS VS EXPRESSIONS
+
+//Declaration
+function calAge1(birthday){
+    return 2037 - birthday;
+}
+
+const age1 = calAge1(2002);
+console.log(age1);
+
+//Expressions
+const calcAge2= function(birthday){
+    return 2037 - birthday;
+}
+
+const age2 = calcAge2(2002);
+
+//----------------------------------------------------------
+
+// ARROW FUNCTIONS
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstname) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstname} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
