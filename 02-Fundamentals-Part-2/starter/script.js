@@ -91,21 +91,21 @@ const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
 
-let friends = [friend1, friend2, friend3];
-console.log(friends);
+// let friends = [friend1, friend2, friend3];
+// console.log(friends);
 
-const y = new Array (1991, 1984, 2008, 2020);
-console.log(friends[0]);
-console.log(friends[2]);
-console.log(friends.length);
-console.log(friends[friends.length -1]);
+// const y = new Array (1991, 1984, 2008, 2020);
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends.length);
+// console.log(friends[friends.length -1]);
 
-friends[2] = 'Jay';
-console.log(friends);
+// friends[2] = 'Jay';
+// console.log(friends);
 
-friends = ['Bob', 'Allis'];
-const firstName = 'Jonas';
-const jonas = [firstName, 'Schmedmann', 2037 -  1991];
+// friends = ['Bob', 'Allis'];
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedmann', 2037 -  1991];
 
 //Exercices 
 const calcAge = function (birthYear){
@@ -121,4 +121,31 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years.length -1)];
 console.log(ages);
+//----------------------------------------------------------
+
+//BASIC ARRAY OPERATIONS (METHODS)
+
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLenght = friends.push('Jay');
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John');
+console.log(friends);
+
+const popped = friends.pop(); // last
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); // -1
+
+friends.push(23);
+console.log(friends.includes('Steven')); //true
+console.log(friends.includes('Bob')); //false
+console.log(friends.includes('23')); //false
+console.log(friends.includes(23)); //true
 //----------------------------------------------------------
