@@ -42,22 +42,22 @@ function calAge1(birthday){
     return 2037 - birthday;
 }
 
-const age1 = calAge1(2002);
-console.log(age1);
+//const age1 = calAge1(2002);
+//console.log(age1);
 
 //Expressions
 const calcAge2= function(birthday){
     return 2037 - birthday;
 }
 
-const age2 = calcAge2(2002);
+//const age2 = calcAge2(2002);
 
 //----------------------------------------------------------
 
 // ARROW FUNCTIONS
 const calcAge3 = birthYear => 2037 - birthYear;
-const age3 = calcAge3(1991);
-console.log(age3);
+//const age3 = calcAge3(1991);
+//console.log(age3);
 
 const yearsUntilRetirement = (birthYear, firstname) => {
     const age = 2037 - birthYear;
@@ -84,3 +84,41 @@ function fruitProcessor(apples, oranges){
 }
 
 console.log(fruitProcessor(2,3));
+//----------------------------------------------------------
+
+//INTRODUCTION TO ARRAYS
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+let friends = [friend1, friend2, friend3];
+console.log(friends);
+
+const y = new Array (1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length -1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+friends = ['Bob', 'Allis'];
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedmann', 2037 -  1991];
+
+//Exercices 
+const calcAge = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length -1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years.length -1)];
+console.log(ages);
+//----------------------------------------------------------
