@@ -149,3 +149,4 @@ console.log(friends.includes('Bob')); //false
 console.log(friends.includes('23')); //false
 console.log(friends.includes(23)); //true
 //----------------------------------------------------------
+
