@@ -150,3 +150,18 @@ console.log(friends.includes('23')); //false
 console.log(friends.includes(23)); //true
 //----------------------------------------------------------
 
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steve']
+]
+
+const jonasObj = {
+    firstName : 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steve']
+}
