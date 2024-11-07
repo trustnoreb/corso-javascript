@@ -159,44 +159,75 @@ const jonasArray = [
     ['Michael', 'Peter', 'Steve']
 ]
 
-const jonasObj = {
-    firstName : 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steve']
-}
+// const jonasObj = {
+//     firstName : 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steve']
+// }
 
-console.log(jonasObj);
+// console.log(jonasObj);
 //----------------------------------------------------------
 
 // DOT VS BRACKET NOTATION
 
 //dot notation
-console.log(jonasObj.lastName);
+// console.log(jonasObj.lastName);
 //bracket notation
-console.log(jonasObj['lastName']);
+// console.log(jonasObj['lastName']);
 
-const nameKey = 'Name';
-console.log(jonasObj[ 'first' + nameKey]);
-console.log(jonasObj[ 'last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(jonasObj[ 'first' + nameKey]);
+// console.log(jonasObj[ 'last' + nameKey]);
 
 //console.log(jonas.'last' + nameKey); //error
 
-const interestedIn = prompt('What do you want to do know about Jonas? Choose between firsname, lastName, age, job and friends');
+// const interestedIn = prompt('What do you want to do know about Jonas? Choose between firsname, lastName, age, job and friends');
 
-if(jonasObj[interestedIn]){
-    console.log(jonasObj[interestedIn]);
-}else{
-    console.log('Wrong request! Choose between firsname, lastName, age, job and friends');
-}
+// if(jonasObj[interestedIn]){
+//     console.log(jonasObj[interestedIn]);
+// }else{
+//     console.log('Wrong request! Choose between firsname, lastName, age, job and friends');
+// }
 
-jonasObj.location = 'Portugal';
-jonasObj['twitter'] = '@jonasschmedtman';
-console.log(jonasObj);
+// jonasObj.location = 'Portugal';
+// jonasObj['twitter'] = '@jonasschmedtman';
+// console.log(jonasObj);
 
 // Challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friends, and his best friend is called ${jonasObj.friends[0]}`);
+// console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friends, and his best friend is called ${jonasObj.friends[0]}`);
 
 //----------------------------------------------------------
+
+//OBJECT METHODS
+const jonas = {
+    firstName : 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steve'],
+    hasDriversLicence: true,
+
+    // calcAge: function(){
+    //     //console.log(this.birthYear);
+    //     return 2037 - this.birthYear;
+    // }
+    calcAge: function(){
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function (){
+        console.log(`${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicence === true ? 'a' : 'no' } driver's licence`);
+    }
+}
+
+// console.log(jonas.calcAge());
+// console.log(jonas['calcAge()']);
+// console.log(jonas.age);
+
+//Challenge -> getSummary
+//"Jonas is a 46-year old people teacher, and he has a/no driver's licence"
+
