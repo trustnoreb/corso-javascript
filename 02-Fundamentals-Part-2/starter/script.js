@@ -285,3 +285,18 @@ for (let i = 0; i < jonasArray.length; i++ ){
 
 //----------------------------------------------------------
 
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
+
+//Looping Backwards
+for( let i = jonasArray.length -1; i >= 0; i--){
+    console.log(i, jonasArray[i]);
+}
+
+//Loops in Loops
+for(let exercise = 1; exercise < 4; exercise++){
+  console.log(`--STARTING EXERCICE ${exercise}--`);  
+
+    for(let rep = 1; rep < 6; rep ++ ){
+        console.log(`Exercice ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
