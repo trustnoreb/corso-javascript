@@ -231,3 +231,13 @@ const jonas = {
 //Challenge -> getSummary
 //"Jonas is a 46-year old people teacher, and he has a/no driver's licence"
 
+//----------------------------------------------------------
+
+// ITERATION: THE FOR LOOP
+for(let rep = 1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+//----------------------------------------------------------
+
+// LOOPING ARRAY, BREAKING AND CONTINUE
